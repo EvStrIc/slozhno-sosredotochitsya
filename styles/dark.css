@@ -1,72 +1,75 @@
 :root.theme-dark {
-  --font: 'IBM Plex mono';
   --font-color: #f1b2ce;
   --font-color-heading: #db00ff;
-  --accent-color: #ff0070;
+  --font-color-title: #000028;
+  --font-section-title: #ff0070;
+  --decorative-text-color: #ff0070;
+  --decorations-color: #ff0070;
+  --button-color: #ff0070;
+  --link-shadow-color: #ff0070;
+  --bg-color-title: #ff0070;
   --background-color: #000028;
   --background-image: url(../images/cover-image-dark.png);
 }
 
-.page.theme_dark {
+.page {
   color: var(--font-color, #f1b2ce);
   background-color: var(--background-color, #000028);
   background-image: var(--background-image);
 }
 
 .decorative-text {
-  color: var(--accent-color, #ff0070);
+  color: var(--decorative-text-color, #ff0070);
 }
 
 .decorative-text::after {
-  background-color: var(--accent-color, #ff0070);
-  box-shadow: 0 0 4px 2px var(--accent-color, #ff0070);
+  background-color: var(--decorative-text-color, #ff0070);
+  box-shadow: 0 0 4px 2px var(--decorative-text-color, #ff0070);
 }
 
-.decorated-zone.theme_dark::before {
-  border-block-start: 1px solid var(--accent-color, #ff0070);
-  border-inline-end: 1px solid var(--accent-color, #ff0070);
+.decorated-zone::before {
+  border-block-start: 1px solid var(--decorations-color, #ff0070);
+  border-inline-end: 1px solid var(--decorations-color, #ff0070);
 }
 
-.decorated-zone.theme_dark::after {
-  border-block-end: 1px solid var(--accent-color, #ff0070);
-  border-inline-start: 1px solid var(--accent-color, #ff0070);
+.decorated-zone::after {
+  border-block-end: 1px solid var(--decorations-color, #ff0070);
+  border-inline-start: 1px solid var(--decorations-color, #ff0070);
 }
 
-.header__theme-menu-button.theme_dark {
-  color: var(--accent-color, #ff0070);
+.header__theme-menu-button {
+  color: var(--button-color, #ff0070);
 }
 
-.header__theme-menu-button.theme_dark:hover {
-  border: 1px solid var(--accent-color, #ff0070, 0.4);
+.header__theme-menu-button:hover {
+  border: 1px solid var(--button-color, #ff0070, 0.4);
 }
 
-.header__theme-menu-button_active.theme_dark {
-  border: 1px solid var(--accent-color, #ff0070);
+.header__theme-menu-button_active {
+  border: 1px solid var(--button-color, #ff0070);
 }
 
-.header__main-title.theme_dark {
+.header__main-title {
   color: var(--font-color-heading, #db00ff);
-  text-shadow: 4px 4px 0 var(--accent-color, #ff0070);
 }
 
-.title-decor.theme_dark {
-  color: var(--background-color, #000028);
-  background-color: var(--accent-color, #ff0070);
+.title-decor {
+  color: var(--font-color-title, #000028);
+  background-color: var(--bg-color-title, #ff0070);
 }
 
-.content__section-title.theme_dark {
-  color: var(--background-color, #000028);
+.content__section-title {
+  color: var(--font-section-title, #ff0070);
 }
 
-.link-decor.theme_dark {
-  text-shadow: 1.5px 1.5px 0 var(--accent-color, #ff0070);
+.link-decor {
+  text-shadow: 1.5px 1.5px 0 var(--link-shadow-color, #ff0070);
 }
 
-.link-decor.theme_dark:focus-visible {
+.link-decor:focus-visible {
   border: 1px solid var(--font-color, #f1b2ce);
 }
 
-.footer__title.theme_dark {
+.footer__title {
   color: var(--font-color-heading, #db00ff);
-  text-shadow: 2px 2px 0 var(--accent-color, #ff0070);
 }
