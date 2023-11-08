@@ -2,10 +2,7 @@
   --font: 'IBM Plex mono';
   --font-color: #f1b2ce;
   --font-color-heading: #db00ff;
-  --line-height: 23.4px;
   --accent-color: #ff0070;
   --background-color: #000028;
   --background-image: url(../images/cover-image-dark.png);
-  --breakpoint-tablet: 768px;
-  --breakpoint-desktop: 1024px;
 }

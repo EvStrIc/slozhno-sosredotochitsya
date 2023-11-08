@@ -1,21 +1,72 @@
-/*
-  Специально для тёмной темы при наличии класса,
-  здесь окажутся стили, которые нужно переопределить принудительно,
-  переключая тему
-*/
-
 :root.theme-dark {
-  /* Дублируем переменные для тёмной темы */
   --font: 'IBM Plex mono';
   --font-color: #f1b2ce;
   --font-color-heading: #db00ff;
-  --line-height: 23.4px;
   --accent-color: #ff0070;
   --background-color: #000028;
   --background-image: url(../images/cover-image-dark.png);
-  --breakpoint-tablet: 768px;
-  --breakpoint-desktop: 1024px;
 }
 
 .page.theme_dark {
+  color: var(--font-color, #f1b2ce);
+  background-color: var(--background-color, #000028);
+  background-image: var(--background-image);
+}
+
+.decorative-text {
+  color: var(--accent-color, #ff0070);
+}
+
+.decorative-text::after {
+  background-color: var(--accent-color, #ff0070);
+  box-shadow: 0 0 4px 2px var(--accent-color, #ff0070);
+}
+
+.decorated-zone.theme_dark::before {
+  border-block-start: 1px solid var(--accent-color, #ff0070);
+  border-inline-end: 1px solid var(--accent-color, #ff0070);
+}
+
+.decorated-zone.theme_dark::after {
+  border-block-end: 1px solid var(--accent-color, #ff0070);
+  border-inline-start: 1px solid var(--accent-color, #ff0070);
+}
+
+.header__theme-menu-button.theme_dark {
+  color: var(--accent-color, #ff0070);
+}
+
+.header__theme-menu-button.theme_dark:hover {
+  border: 1px solid var(--accent-color, #ff0070, 0.4);
+}
+
+.header__theme-menu-button_active.theme_dark {
+  border: 1px solid var(--accent-color, #ff0070);
+}
+
+.header__main-title.theme_dark {
+  color: var(--font-color-heading, #db00ff);
+  text-shadow: 4px 4px 0 var(--accent-color, #ff0070);
+}
+
+.title-decor.theme_dark {
+  color: var(--background-color, #000028);
+  background-color: var(--accent-color, #ff0070);
+}
+
+.content__section-title.theme_dark {
+  color: var(--background-color, #000028);
+}
+
+.link-decor.theme_dark {
+  text-shadow: 1.5px 1.5px 0 var(--accent-color, #ff0070);
+}
+
+.link-decor.theme_dark:focus-visible {
+  border: 1px solid var(--font-color, #f1b2ce);
+}
+
+.footer__title.theme_dark {
+  color: var(--font-color-heading, #db00ff);
+  text-shadow: 2px 2px 0 var(--accent-color, #ff0070);
 }
