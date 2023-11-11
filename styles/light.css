@@ -1,4 +1,4 @@
-:root.theme-light {
+.page.theme_light {
   --font-color: #353430;
   --font-color-heading: #ffc2e6;
   --font-color-title: #353430;
@@ -10,69 +10,66 @@
   --bg-color-title: #ff8dcb;
   --background-color: #fff1f7;
   --background-image: url(../images/cover-image-light.png);
-}
-
-.page {
   color: var(--font-color, #353430);
   background-color: var(--background-color, #fff1f7);
   background-image: var(--background-image);
 }
 
-.decorative-text {
+.page.theme_light .decorative-text {
   color: var(--decorative-text-color, #fff1f7);
 }
 
-.decorated-zone::before {
+.page.theme_light .decorated-zone::before {
   border-block-start: 1px solid var(--decorations-color, #353430);
   border-inline-end: 1px solid var(--decorations-color, #353430);
 }
 
-.decorated-zone::after {
+.page.theme_light .decorated-zone::after {
   border-block-end: 1px solid var(--decorations-color, #353430);
   border-inline-start: 1px solid var(--decorations-color, #353430);
 }
 
-.header__theme-menu-button {
+.page.theme_light .header__theme-menu-button {
   color: var(--button-color, #353430);
 }
 
-.header__theme-menu-button:hover {
+.page.theme_light .header__theme-menu-button:hover {
   --font-color: #32312d;
   border: 1px solid var(--button-color, #32312d, 0.4);
 }
 
-.header__theme-menu-button_active {
+.page.theme_light .header__theme-menu-button_active {
   border: 1px solid var(--button-color, #353430);
 }
 
-.header__main-title {
+.page.theme_light .header__main-title {
   color: var(--font-color-heading, #ffc2e6);
 }
 
-.title-decor {
+.page.theme_light .title-decor {
   color: var(--font-color-title, #353430);
   background-color: var(--bg-color-title, #ff8dcb);
 }
 
-.content__section-title {
+.page.theme_light .content__section-title {
   color: var(--font-section-title, #353430);
 }
 
-.link-decor {
+.page.theme_light .link-decor {
   text-shadow: 1.5px 1.5px 0 var(--link-shadow-color, #ff8dcb);
 }
 
-.link-decor:focus-visible {
+.page.theme_light .link-decor:focus-visible {
   border: 1px solid var(--font-color, #353430);
 }
 
-.footer__title {
+.page.theme_light .footer__title {
   color: var(--font-color-heading, #ffc2e6);
 }
 
 @media (prefers-color-scheme: light) {
 
-  :root {
+  .page.theme_light {
     --font-color: #353430;
     --font-color-heading: #ffc2e6;
     --font-color-title: #353430;
@@ -84,62 +81,59 @@
     --bg-color-title: #ff8dcb;
     --background-color: #fff1f7;
     --background-image: url(../images/cover-image-light.png);
-  }
-
-  .page {
     color: var(--font-color, #353430);
     background-color: var(--background-color, #fff1f7);
     background-image: var(--background-image);
   }
 
-  .decorative-text {
+  .page.theme_light .decorative-text {
     color: var(--decorative-text-color, #fff1f7);
   }
 
-  .decorated-zone::before {
+  .page.theme_light .decorated-zone::before {
     border-block-start: 1px solid var(--decorations-color, #353430);
     border-inline-end: 1px solid var(--decorations-color, #353430);
   }
 
-  .decorated-zone::after {
+  .page.theme_light .decorated-zone::after {
     border-block-end: 1px solid var(--decorations-color, #353430);
     border-inline-start: 1px solid var(--decorations-color, #353430);
   }
 
-  .header__theme-menu-button {
+  .page.theme_light .header__theme-menu-button {
     color: var(--button-color, #353430);
   }
 
-  .header__theme-menu-button:hover {
+  .page.theme_light .header__theme-menu-button:hover {
     border: 1px solid var(--button-color, #32312d, 0.4);
   }
 
-  .header__theme-menu-button_active {
+  .page.theme_light .header__theme-menu-button_active {
     border: 1px solid var(--button-color, #353430);
   }
 
-  .header__main-title {
+  .page.theme_light .header__main-title {
     color: var(--font-color-heading, #ffc2e6);
   }
 
-  .title-decor {
+  .page.theme_light .title-decor {
     color: var(--font-color-title, #353430);
     background-color: var(--bg-color-title, #ff8dcb);
   }
 
-  .content__section-title {
+  .page.theme_light .content__section-title {
     color: var(--font-section-title, #353430);
   }
 
-  .link-decor {
+  .page.theme_light .link-decor {
     text-shadow: 1.5px 1.5px 0 var(--link-shadow-color, #ff8dcb);
   }
 
-  .link-decor:focus-visible {
+  .page.theme_light .link-decor:focus-visible {
     border: 1px solid var(--font-color, #353430);
   }
 
-  .footer__title {
+  .page.theme_light .footer__title {
     color: var(--font-color-heading, #ffc2e6);
   }
 }

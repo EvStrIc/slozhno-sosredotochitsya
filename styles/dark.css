@@ -1,4 +1,4 @@
-:root.theme-dark {
+.page.theme_dark {
   --font-color: #f1b2ce;
   --font-color-heading: #db00ff;
   --font-color-title: #000028;
@@ -10,66 +10,63 @@
   --bg-color-title: #ff0070;
   --background-color: #000028;
   --background-image: url(../images/cover-image-dark.png);
-}
-
-.page {
   color: var(--font-color, #f1b2ce);
   background-color: var(--background-color, #000028);
   background-image: var(--background-image);
 }
 
-.decorative-text {
+.page.theme_dark .decorative-text {
   color: var(--decorative-text-color, #ff0070);
 }
 
-.decorative-text::after {
+.page.theme_dark .decorative-text::after {
   background-color: var(--decorative-text-color, #ff0070);
   box-shadow: 0 0 4px 2px var(--decorative-text-color, #ff0070);
 }
 
-.decorated-zone::before {
+.page.theme_dark .decorated-zone::before {
   border-block-start: 1px solid var(--decorations-color, #ff0070);
   border-inline-end: 1px solid var(--decorations-color, #ff0070);
 }
 
-.decorated-zone::after {
+.page.theme_dark .decorated-zone::after {
   border-block-end: 1px solid var(--decorations-color, #ff0070);
   border-inline-start: 1px solid var(--decorations-color, #ff0070);
 }
 
-.header__theme-menu-button {
+.page.theme_dark .header__theme-menu-button {
   color: var(--button-color, #ff0070);
 }
 
-.header__theme-menu-button:hover {
+.page.theme_dark .header__theme-menu-button:hover {
   border: 1px solid var(--button-color, #ff0070, 0.4);
 }
 
-.header__theme-menu-button_active {
+.page.theme_dark .header__theme-menu-button_active {
   border: 1px solid var(--button-color, #ff0070);
 }
 
-.header__main-title {
+.page.theme_dark .header__main-title {
   color: var(--font-color-heading, #db00ff);
 }
 
-.title-decor {
+.page.theme_dark .title-decor {
   color: var(--font-color-title, #000028);
   background-color: var(--bg-color-title, #ff0070);
 }
 
-.content__section-title {
+.page.theme_dark .content__section-title {
   color: var(--font-section-title, #ff0070);
 }
 
-.link-decor {
+.page.theme_dark .link-decor {
   text-shadow: 1.5px 1.5px 0 var(--link-shadow-color, #ff0070);
 }
 
-.link-decor:focus-visible {
+.page.theme_dark .link-decor:focus-visible {
   border: 1px solid var(--font-color, #f1b2ce);
 }
 
-.footer__title {
+.page.theme_dark .footer__title {
   color: var(--font-color-heading, #db00ff);
 }
