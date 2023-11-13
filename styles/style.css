@@ -291,7 +291,7 @@
 
 @media (width <= 355px) {
 
-  .header__main-title{
+  .header__main-title {
     font-size: clamp(3.125rem, -10.2083rem + 66.6667vw, 4.375rem);
   }
 
@@ -316,7 +316,7 @@
     font-size: 12px;
   }
 
-  .header__main-title{
+  .header__main-title {
     font-size: clamp(3.125rem, -10.2083rem + 66.6667vw, 4.375rem);
   }
 
